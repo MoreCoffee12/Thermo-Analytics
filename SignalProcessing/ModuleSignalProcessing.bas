@@ -1,7 +1,21 @@
 Attribute VB_Name = "ModuleSignalProcessing"
-'Don't be lazy
-Option Explicit
-
+'-----------------------------------------------------------------------------
+' Copyright 2024 Robot Squirrel Productions.
+'
+'          (\_   _/)
+'          ( o   o )
+'          (  ^_^  )
+'             \_/_
+'
+' Confidential and proprietary computer code and data.
+'
+' Copyright 2024 Robot Squirrel Productions.  All rights reserved. This
+' computer code is proprietary to Robot Squirrel Productions and/or its
+' affiliate(s) and may be covered by patents. It may not be used,
+' disclosed, modified, transferred, or reproduced without prior written
+' consent.
+'-----------------------------------------------------------------------------
+'
 '-----------------------------------------------------------------------------
 ' Revision
 '
@@ -54,8 +68,12 @@ Option Explicit
 ' 4 April 2014
 '-----------------------------------------------------------------------------
 
+'-----------------------------------------------------------------------------
+' Avoid naming collisiions
+Option Explicit
+'-----------------------------------------------------------------------------
 
-
+'-----------------------------------------------------------------------------
 'Link to Signal Processing DLL
 #If VBA7 Then
     Private Declare PtrSafe Function GetFFTMaxArraySize _
